@@ -1,6 +1,6 @@
 <template>
     <div class="item">
-        <img :src="'/' + props.item.id + '.png'" alt="" class="item__image">
+        <img :src="props.item.id + '.png'" alt="" class="item__image">
         <div class="item__description">
             <h2 class="item__description-title">Вытяжное устройство G2H</h2>
             <p class="item__description-info">12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия</p>

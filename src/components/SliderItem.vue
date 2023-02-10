@@ -1,6 +1,6 @@
 <template>
     <div class="slide">
-        <img :src="'/' + props.item.id + '.png'" alt="" class="slide__image">
+        <img :src="props.item.id + '.png'" alt="" class="slide__image">
         <h2 class="slide__title">{{ item.title.split(' ')[2] }}</h2>
         <p class="slide__description">{{ item.description }}</p>
         <p class="slide__price-rubles">{{ `${item.minPrice} ₽ - ${item.maxPrice} ₽` }}</p>

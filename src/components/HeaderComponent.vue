@@ -1,11 +1,10 @@
-<!-- header__bin-menu_active -->
 <template>
     <header class="header">
         <div class="header__bin">
-            <img src="../assets/images/header_bin.svg" alt="Корзина" class="header__bin-icon">
+            <img :src="'' + 'header_bin.svg'" alt="Корзина" class="header__bin-icon">
             <div class="header__bin-data">
                 <p class="header__bin-title">Ваша корзина</p>
-                <p class="header__bin-amount">{{ store.cartItems.reduce((prev, curr) => prev + curr.amount , 0) }} товара</p>
+                <p class="header__bin-amount">{{ store.cartItems.reduce((prev, curr) => prev + curr.amount , 0) }} товаров</p>
                 <p class="header__bin-total">{{ store.cartItems.reduce((prev, curr) => prev + (curr.price * curr.amount), 0) }} ₽</p>
             </div>
         </div>
